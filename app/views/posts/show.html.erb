@@ -1,0 +1,8 @@
+  <h1>Post SHOW PAGE</h1>
+  <p><%= @post.title%></p>
+  <p><%= @post.content%></p>
+  <%= link_to 'go back to all posts', posts_path %>
+
+  <% @posts.comments.each do |comment| %>
+  <p><%= comment.content%>
+<% end %>
